@@ -1,0 +1,50 @@
+---
+# Hardware.yml: Vale rule to correct miswritten hardware abbreviations / names
+# Source: https://github.com/jargonLint/jargonLint/vale/styles/Hardware.yml
+# License: MIT
+extends: substitution
+ignorecase: true
+level: warning
+message: Use '%s' instead of '%s'
+action:
+  name: replace
+swap:
+  Blu[ \-]?ray: Blu-ray
+  Btrfs: Btrfs
+  CD[ \-]ROM: CD-ROM
+  CD[ \-]RW: CD-RW
+  CPU: CPU
+  CPUs: CPUs
+  DAB\+: DAB+
+  DAB/DAB\+: DAB/DAB+
+  Display ?Port: Display Port
+  DVD: DVD
+  DVD\+?R: DVD+R
+  DVD\+?RW: DVD+RW
+  DVD\-?R: DVD-R
+  DVD[ \-]?RAM: DVD-RAM
+  DVD\-?RW: DVD-RW
+  ex[ -]FAT: exFAT
+  Ext[ -]?3: Ext3
+  Ext[ -]?4: Ext4
+  FAT[ -]32: FAT32
+  GPU: GPU
+  GPUs: GPUs
+  HD[ \-]?DVD: HD DVD
+  HDFS: HDFS
+  HDMI: HDMI
+  NTFS: NTFS
+  RAM: RAM
+  ReiserFS: ReiserFS
+  SDHC: SDHC
+  SDUC: SDUC
+  SDXC: SDXC
+  SSD: SSD
+  Thunderbolt: Thunderbolt
+  USB: USB
+  USB(?:[ -]Type)?-A: USB Type-A
+  USB(?:[ -]Type)?-B: USB Type-B
+  USB(?:[ -]Type)?-?C: USB Type-C
+  Wi[ -]?Fi: Wi-Fi
+  XFS: XFS
+  ZFS: ZFS
